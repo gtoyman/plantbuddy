@@ -26,6 +26,12 @@
 	$wVolume = "";
         $nutrient_parts = [];
 
+	if(isset($_POST['pHours'])){
+		$pHours = $_POST['pHours'];
+	} else {
+		$pHours = "0";
+	}
+
         if(isset($_POST['wDate']) && $_POST['wDate'] != ""){
             $wDate = $_POST['wDate'];
             if(isset($_POST['wVolume']) && $_POST['wVolume'] != "") {
@@ -68,11 +74,12 @@
 
                 fwrite($bestand, "&nbsp;Watering Date : " . $wDate . "<br>");
                 fwrite($bestand, "&nbsp;Water Volume : " . $wVolume . " L<br>");
+                fwrite($bestand, "&nbsp;Hours Of Light : " . $pHours . " H<br>");
 
                 $y=0;
 
                 foreach ($_POST as $key => $value) {
-                    if ($y >= 3 && $y < ($count -3)) {
+                    if ($y >= 4 && $y < ($count -4)) {
                         $tst = explode('<br>', $key);
                         if($value != ""){
                             fwrite($bestand, "&nbsp;" . $tst[0] . " : " . $value . " ml<br>");
@@ -152,6 +159,10 @@
                   ?>
                 <div style="width: 230px;">(L)<br><br></div>
             </div>
+            <div style="display:flex">
+                <div style="width: 230px;">Hours Of Light : </div><?php echo "<div><input type=\"text\" name=\"pHours\" value=\"18\"></input></div>"; ?>
+            </div>
+	    <br>
             <?php
                 $dir = 'nutrients/';
 

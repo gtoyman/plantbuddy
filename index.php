@@ -3,7 +3,7 @@
     $dir = 'plants/';
 
     $files = array_diff(scandir($dir), ['.', '..']);
-    sort($files);
+    rsort($files);
 
     foreach ($files as $file) {
         $path = $dir . $file;
@@ -102,6 +102,20 @@
 		$total = 0;
 	    }
 
+            // CALCULATE TOTAL H OF LIGHT.
+	    if(file_exists('water/' . $file)) {
+            	$liters = file("water/" . $file , FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            	$totalh = 0;
+            	foreach ($liters as $line) {
+                	$results = explode('Light : ', $line);
+                	if(isset($results[1])) {
+				$liter = explode('H', $results[1]);
+                		$totalh += $liter[0];
+			}
+            	}
+	    } else {
+		$totalh = 0;
+	    }
 
             // SHOW CARD
             echo "<div style=\"background-color: #fff; font-size: 30px;\">&nbsp;<u>$result[0]</u></div>";
@@ -135,6 +149,7 @@
             echo "&nbsp;Last Watering : <br>";
             echo "$lastLine";
             echo "<br>";
+            echo "&nbsp;Total Hours Of Light used : " . $totalh . " H<br>";
             echo "&nbsp;Total Liters water used : " . $total . " L";
             echo "<br><br>";
 

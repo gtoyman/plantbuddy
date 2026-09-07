@@ -226,7 +226,7 @@
     $dir = 'plants/';
 
     $files = array_diff(scandir($dir), ['.', '..']);
-    //rsort($files); // descending
+    rsort($files); // descending
 
     foreach ($files as $file) {
         $path = $dir . $file;
