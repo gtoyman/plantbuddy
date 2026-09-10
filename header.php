@@ -7,14 +7,14 @@
 </head>
 <body>
     <br>
-    <div style="width: 98%; font-size: 22; margin: 0 auto; padding: 10px; border: 2px solid #000; color: #f30; background-color: #000;">
+    <div style="width: 77%; font-size: 22; margin: 0 auto; padding: 10px; border: 2px solid #000; color: #f30; background-color: #000;">
             PlantBuddy v2.0 -> Current Date : <?php echo $timer; ?>
     </div>
-    <div class='top-image' style="width:98%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;">
+    <div class='top-image' style="width:78%; margin: 0 auto; background-color: #fff; border: 2px solid #000;">
     <h1><a href="index.php"><img src="top-image.png"></img></a></h1>
     </div>
 
-    <div style="display: flex; align: left; padding: 5px;">
+    <div style="width:78%; padding: 10px; display: flex; margin: 0 auto; align: center;">
         <div style="width:60px; padding: 10px; background-color: #fff; border: 2px solid #000;">
             <a href="index.php">Home</a>
         </div>

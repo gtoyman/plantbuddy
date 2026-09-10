@@ -11,7 +11,7 @@
         if (is_file($path)) {
             $content = file_get_contents($path);
             $result = explode('<br>', $content);
-            print("<div class =\"plantfile\" style=\"width:98%; margin: 0 auto; padding: 10px; background-color: #000; border: 2px solid #000;\">");
+            print("<div class =\"plantfile\" style=\"width:77%; margin: 0 auto; padding: 10px; background-color: #000; border: 2px solid #000;\">");
             print("<br><form action=\"water_plant.php\" method=\"post\">
                 <input type=\"hidden\" name=\"water\" value=\"1\">
                 <input type=\"hidden\" name=\"file\" value=\"$file\">");
@@ -149,8 +149,8 @@
             echo "&nbsp;Last Watering : <br>";
             echo "$lastLine";
             echo "<br>";
-            echo "&nbsp;Total Hours Of Light used : " . $totalh . " H<br>";
-            echo "&nbsp;Total Liters water used : " . $total . " L";
+            echo "&nbsp;Total Liters water used : " . $total . " L<br>";
+            echo "&nbsp;Total Hours Of Light used : " . $totalh . " H";
             echo "<br><br>";
 
 	    if($procent != 100) {
