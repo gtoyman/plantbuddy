@@ -45,7 +45,7 @@
 
     <form action="add_nutrients.php" method="post">
     <input type="hidden" name="addnutrient" value="1"></input>
-    <div class="nutrientfile" style="width:98%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;">
+    <div class="nutrientfile" style="width:80%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;">
         <div><h3><u>Add New Nutrient</u><h3></div>
         <div style="display: flex; padding: 10px;"">
             <div style="width: 200px;">Nutrient Name : </div>

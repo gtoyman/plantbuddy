@@ -128,7 +128,7 @@
 
     <form action="water_plant.php" method="post">
     <input type="hidden" name="add" value="1"></input>
-    <div class="nutrientfile" style="width:98%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;">
+    <div class="nutrientfile" style="width:80%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;">
         <div><h3><u>Watering Plant</u><h3></div>
         <div>
             <div style="display:flex">

@@ -11,7 +11,7 @@
         if (is_file($path)) {
             $content = file_get_contents($path);
             $result = explode('<br>', $content);
-            print("<div class =\"plantfile\" style=\"width:77%; margin: 0 auto; padding: 10px; background-color: #000; border: 2px solid #000;\">");
+            print("<div class =\"plantfile\" style=\"width:80%; margin: 0 auto; padding: 10px; background-color: #000; border: 2px solid #000;\">");
             print("<br><form action=\"water_plant.php\" method=\"post\">
                 <input type=\"hidden\" name=\"water\" value=\"1\">
                 <input type=\"hidden\" name=\"file\" value=\"$file\">");
@@ -118,7 +118,11 @@
 	    }
 
             // SHOW CARD
-            echo "<div style=\"background-color: #fff; font-size: 30px;\">&nbsp;<u>$result[0]</u></div>";
+	    if ($procent != 100) {
+            	echo "<div style=\"background-color: #fff; font-size: 30px;\">&nbsp;<u>$result[0]</u></div>";
+            } else {
+		echo "<div style=\"background-color: #fff; font-size: 30px;\">&nbsp;<u>$result[0] - COMPLETED</u></div>";
+	    }
             echo "<div style=\"background-color: #ddd; font-size: 25px\">&nbsp;$result[1]</div>";
             echo "<br>&nbsp;$result[3]<br>";
             echo "&nbsp;$result[4]<br>";
@@ -154,10 +158,10 @@
             echo "<br><br>";
 
 	    if($procent != 100) {
-            	echo "&nbsp;<button type=\"submit\">Water Plant</button></form>";
+            	echo "&nbsp;<button type=\"submit\">Care Plant</button></form>";
             } else {
 		echo "<input type=\"hidden\" name=\"log\" value=\"1\">";
-            	echo "&nbsp;<button type=\"submit\">Water Log</button></form>";
+            	echo "&nbsp;<button type=\"submit\">Care Log</button></form>";
 	    }
 	    echo "</div><br>";
         }

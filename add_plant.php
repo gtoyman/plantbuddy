@@ -147,7 +147,7 @@
         }
         ?>
     <input type="hidden" name="addplant" value="1"></input>
-    <div class="addplant" style="width:98%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;">
+    <div class="addplant" style="width:80%; margin: 0 auto; padding: 10px; background-color: #fff; border: 2px solid #000;">
         <div><h3><u>Add New Plant</u><h3></div>
         <div style="display: flex; padding: 10px;"">
             <div style="width: 230px;">Plant Name : </div>

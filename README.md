@@ -9,6 +9,8 @@ Growth stages (seed, germination, vegetative growth, flowering, maturation)
 
 Water usage
 
+Hours of light
+
 Nutrient/fertilizer usage
 
 Time-based development progress
