@@ -11,6 +11,7 @@
         if (file_exists('plants/' . $file)) {
              $path="plants/" . $file;
              if (is_file($path)) {
+
                 $content = file_get_contents($path);
                 $result = explode('<br>', $content);
 
@@ -232,6 +233,22 @@
         $path = $dir . $file;
 
         if (is_file($path)) {
+        $i = 0;
+        $extension = strtolower(pathinfo($path, PATHINFO_EXTENSION));
+
+        if ($extension === 'png') {
+                $i = 1;
+        }
+        if ($extension === 'jpeg') {
+                $i = 1;
+	}
+        if ($extension === 'jpg') {
+                $i = 1;
+        }
+
+        if($i == 0) {
+
+
             $content = file_get_contents($path);
             $result = explode('<br>', $content);
             print("<div class=\"plantfile\" style=\"width:98%; margin: 0 auto; padding: 10px; background-color: #000; border: 2px solid #000;\">");
@@ -278,6 +295,7 @@
                 <input type=\"hidden\" name=\"file\" value=\"$file\">");
             echo "<button type=\"submit\">Delete Plant</button></form>";
             echo "</div><br>";
+	}
         }
     }
 ?>
