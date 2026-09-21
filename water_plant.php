@@ -80,7 +80,7 @@
                 $y=0;
 
                 foreach ($_POST as $key => $value) {
-                    if ($y >= 3 && $y < ($count -3)) {
+                    if ($y >= 4 && $y < ($count -3)) {
                         $tst = explode('<br>', $key);
                         if($value != ""){
                             fwrite($bestand, "&nbsp;" . $tst[0] . " : " . $value . " ml<br>");
