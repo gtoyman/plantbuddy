@@ -44,12 +44,13 @@
 
                     foreach ($files as $nutrient) {
                         $path = $dir . $nutrient;
-
+			//echo $path;
                         if (is_file($path)) {
                             $content = file_get_contents($path);
                             $nutrient = explode(':', $content);
                             $result = str_replace(["\r", "\n"], '', $nutrient[1]);
-                            $nutName[] = $result;
+                            //echo $result;
+			    $nutName[] = $result;
                         }
                     }
                 //print_r($nutName);
@@ -79,7 +80,7 @@
                 $y=0;
 
                 foreach ($_POST as $key => $value) {
-                    if ($y >= 4 && $y < ($count -4)) {
+                    if ($y >= 3 && $y < ($count -3)) {
                         $tst = explode('<br>', $key);
                         if($value != ""){
                             fwrite($bestand, "&nbsp;" . $tst[0] . " : " . $value . " ml<br>");
