@@ -60,4 +60,5 @@ Note:  language:Hack is a programming language and I've no idea of where I'm usi
 
 Note: You can do whole crops with the app just by changing the plant-name into grow-name. Just multiply the results by the number of plants.
 
-Note: Pictures can only be .png, .jpg or .jpeg. - If your file is too big you'll get an upload error 1 .
+Note: Pictures can only be .png, .jpg or .jpeg. - If your file is too big you'll get an upload error 1 . You can add 3 images. First one is a .png, second one is the .jpg, third one is the .jpeg.
+
