@@ -227,13 +227,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['picture'])) {
 	    }
 
 	    if(file_exists("plants/img_$file.png")) {
-	       echo "<a href=\"plants/img_$file.png\"><img src=\"plants/img_$file.png\" width=\"400px\" style=\"border: 5px solid black;\"></img></a><br>";
+	       echo "<a href=\"plants/img_$file.png\"><img src=\"plants/img_$file.png\" width=\"200px\" style=\"border: 5px solid black;\"></img></a>&nbsp;";
             }
 	    if(file_exists("plants/img_$file.jpg")) {
-	       echo "<a href=\"plants/img_$file.jpg\"><img src=\"plants/img_$file.jpg\" width=\"400px\" style=\"border: 5px solid black;\"></img></a><br>";
+	       echo "<a href=\"plants/img_$file.jpg\"><img src=\"plants/img_$file.jpg\" width=\"200px\" style=\"border: 5px solid black;\"></img></a>&nbsp";
             }
 	    if(file_exists("plants/img_$file.jpeg")) {
-	       echo "<a href=\"plants/img_$file.jpeg\"><img src=\"plants/img_$file.jpeg\" width=\"400px\" style=\"border: 5px solid black;\"></img></a><br>";
+	       echo "<a href=\"plants/img_$file.jpeg\"><img src=\"plants/img_$file.jpeg\" width=\"200px\" style=\"border: 5px solid black;\"></img></a><br>";
             }
 
 ?>
