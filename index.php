@@ -47,7 +47,7 @@ echo "<div align=\"center\">";
 echo "<div align=\"left\" style=\"background-color: #fff; font-size: 30px; width:81%;\">&nbsp;&nbsp;</div>";
 echo "</div>";
 echo "<div align=\"center\">";
-echo "<div align=\"left\" style=\"background-color: #fff; font-size: 30px; width:81%;\">&nbsp;&nbsp;<u id=\"top\">Plant Index</u></div>";
+echo "<div align=\"left\" style=\"background-color: #fff; font-size: 30px; width:81%;\">&nbsp;&nbsp;&nbsp; - <u id=\"top\">Plant Index</u> -</div>";
 echo "</div>";
 echo "<div align=\"center\">";
 echo "<div align=\"left\" style=\"background-color: #fff; font-size: 30px; width:81%;\">&nbsp;&nbsp;</div>";
@@ -80,7 +80,7 @@ foreach ($files as $file) {
                     $content = file_get_contents($path);
                     $result = explode('<br>', $content);
                     echo "<div align=\"center\">";
-                    echo "<div align=\"left\" style=\"background-color: #fff; font-size: 30px; width:81%;\">&nbsp;&nbsp;<a href=\"#$y\">$result[0]</a></div>";
+                    echo "<div align=\"left\" style=\"background-color: #fff; font-size: 30px; width:81%;\">&nbsp;&nbsp;<img src=\"picon.png\" width=\"40\"></img><a href=\"#$y\">$result[0]</a></div>";
                     echo "</div>";
                     $y++;
         }
