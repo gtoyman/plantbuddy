@@ -15,7 +15,7 @@
     </div>
 
     <div style="width:81%; padding: 10px; display: flex; margin: 0 auto; align: center;">
-        <div style="width:60px; padding: 10px; background-color: #fff; border: 2px solid #000;">
+        <div style="width:90px; padding: 10px; background-color: #fff; border: 2px solid #000;">
             <a href="index.php">Home</a>
         </div>
         <div style="width:170px; padding: 10px; background-color: #fff; border: 2px solid #000;">
