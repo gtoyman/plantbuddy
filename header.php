@@ -8,7 +8,7 @@
 <body>
     <br>
     <div style="width: 80%; font-size: 22; margin: 0 auto; padding: 10px; border: 2px solid #000; color: #f30; background-color: #000;">
-            PlantBuddy v2.1 -> Current Date : <?php echo $timer; ?>
+            PlantBuddy v2.2 -> Current Date : <?php echo $timer; ?>
     </div>
     <div class='top-image' style="width:81%; margin: 0 auto; background-color: #fff; border: 2px solid #000;">
     <h1><a href="index.php"><img src="top-image.png"></img></a></h1>
